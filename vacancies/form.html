@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Мрія</title>
+   <link rel="stylesheet" href="../public/style.css">
+</head>
+
+<body>
+   <main>
+      <header>           
+         <nav>
+            <ul class="menu">
+               <span id="nameCompany">Судноплавна компанія "Мрія"</span> 
+               <li><a href="../index.html">Голове меню</a></li>
+               <li><a href="../crew/crew.html">Екіпаж</a></li>
+               <li><a href="../ships/ships.html">Наші судна</a></li>
+               <li><a href="../vacancies/vacancies.html" style="border-bottom: 4px solid black;">Вакансії</a></li>
+               <li><a href="../contacts/contacts.html">Контакти</a></li>
+            </ul>
+         </nav>
+      </header> 
+      <!--Форма-Анкета -->
+      <div class="main-container">
+      <section class="info ">
+         <h1>Анкета</h1>
+         <div class="container">
+            <form enctype="multipart/form-data" method="post">
+
+               <label for="fname">Ім'я</label>
+               <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+               <label for="lname">Прізвище</label>
+               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+               
+               <label for="sex">Стать</label>
+               <select id="sex" name="sex">
+                  <option value="man">Чоловіча</option>
+                  <option value="women">Жіноча</option>
+               </select>
+
+               <label for="country">Країна проживання</label>
+               <input type="text" id="country" name="country" placeholder="Your country of residence..">
+
+               <label for="position">На яку посаду претендуєте</label>
+               <input type="text" id="position" name="position" placeholder="Your position...">
+
+               <label for="phone">Ваш номер телефона</label>
+               <input type="text" id="phone" name="phone" placeholder="Your phone...">
+
+               <label for="subject">Роскажіть про себе</label>
+               <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+               <label for="subject">Додати сертифікат</label>
+               <input type="file" name="f"><br>
+
+               <p><button type="send" id="send">Відправити анкету</button></p>
+
+            </form>
+         </div>
+      </section>      
+      <div class="btn-up btn-up_hide"></div>
+      <!--Модальне вікно-->
+      <div class="modal">
+         <div class="modal__dialog">
+            <div class="modal__content">
+               <form action="#">
+                  <div data-close class="modal__close">&times;</div>
+                  <div id="modalText" class="modal__title"></div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div class="btn-up btn-up_hide"></div>
+      </div>
+      <footer>
+         ТОВ "Мрія" агентування морських суден та експедирування вантажів в Україні, працевлаштування моряків <br>
+         м.Одеса, Україна <br>Телефон +380-000-00000; E-mail: mriya@ukr.net
+      </footer>
+   </main>
+   <script src="../public/script.js"></script>
+   <script src="../public/form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ua">
+<!-- Метаданні сторінки -->
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Заголовок сторінки -->
+   <title>Мрія</title>
+   <!-- Підключення css файлів з стилями -->
+   <link rel="stylesheet" href="public/style.css">
+   <link rel="stylesheet" href="public/slider.css">
+</head>
+
+<body>
+   <main>
+      <!-- Шапка сторінки (Назва компанії та Навігаційне меню) -->
+      <header>
+         <nav>
+            <ul class="menu">
+               <span id="nameCompany">Судноплавна компанія "Мрія"</span>
+               <li><a href="index.html" style="border-bottom: 4px solid black;">Голове меню</a></li>
+               <li><a href="crew\crew.html">Екіпаж</a></li>
+               <li><a href="ships\ships.html">Наші судна</a></li>
+               <li><a href="vacancies\vacancies.html">Вакансії</a></li>
+               <li><a href="contacts\contacts.html">Контакти</a></li>
+            </ul>
+         </nav>
+      </header>
+      <div class="main-container">
+         <!-- Тіло сторінки з інформацією -->
+         <section class="info">
+            <p>Сьогодні компанія "Мрія" надає професійний та надійний сервіс з агентування суден у портах України.
+               Працюючи судновими агентами з 1997 р., ми здобули багаті знання та великий досвід. Налагоджено тісні
+               контакти з портовою владою та стивідорними компаніями. Це допомагає ефективно захищати інтереси
+               судновласників в українських портах.
+               Ми усвідомлюємо важливість та значення своєчасного надання інформації, чіткого виконання вказівок. Тому
+               протягом усього часу перебування судна в порту наш клієнт постійно обізнаний з ходом
+               вантажно-розвантажувальних операцій."Мрія" - Ваш надійний партнер в українських портах.</p>
+            <p>Ми виконаємо будь-які замовлення, пов'язані з експедируванням будь-яких вантажів та будь-яким
+               транспортом.Наявність договорів з адміністраціями залізниць України дає нам можливість здійснювати
+               доставку вантажу між будь-якими залізничними станціями України, а розвинена мережа міжнародних
+               експедиторів-партнерів значно розширює географію діяльності.Наші фахівці, які мають дипломи міжнародних
+               експедиторів, видані FIATA, можуть запропонувати оптимальний варіант доставки вантажу.</p>
+            Комплекс послуг, що пропонуються підприємством включає:
+            <ul>
+               <li>експедирування вантажів, включаючи перевалку у портах;</li>
+               <li>організацію перевезень "від дверей до дверей" залізничним, автомобільним, морським та річковим
+                  транспортом;</li>
+               <li>стаффіювання (завантаження/розвантаження) контейнерів;</li>
+               <li>організація охорони та страхування;</li>
+               <li>стеження за просуванням вантажу по мережі залізниць країн світу та багато іншого.</li>
+            </ul>
+         </section>
+         <div class="textShips"><b>Наші судна:</b></div>
+         <section class="main-menu">
+            <!-- Фото для слайдера -->
+            <div class="slideshow-container">
+               <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <a href="ships\azara.html"><img src="public\img\azara.jpg" alt="azara" style="width:100%"></a>
+                  <div class="text">Azara</div>
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <a href="ships\bellis.html"><img src="public\img\bellis.jpg" alt="bellis" style="width:100%"></a>
+                  <div class="text">Bellis</div>
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <a href="ships\briza.html"><img src="public\img\briza.jpg" alt="briza" style="width:100%"><br></a>
+                  <div class="text">Briza</div>
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">4 / 5</div>
+                  <a href="ships\laurus.html"><img src="public\img\laurus.jpg" alt="laurus" style="width:100%"><br></a>
+                  <div class="text">Laurus</div>
+               </div>
+               <div class="mySlides fade">
+                  <div class="numbertext">5 / 5</div>
+                  <a href="ships\ramus.html"><img src="public\img\ramus.jpg" alt="ramus" style="width:100%"><br></a>
+                  <div class="text">Ramus</div>
+               </div>
+                <!-- Кнопки для слайдера -->
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+         </section>
+         <!--Кнопка повернення сторінки нагору -->
+         <div class="btn-up btn-up_hide"></div>
+      </div>
+      <!--Підвал сайту з інформацією -->
+      <footer>
+         ТОВ "Мрія" агентування морських суден та експедирування вантажів в Україні, працевлаштування моряків <br>
+         м.Одеса, Україна <br>Телефон +380-000-00000; E-mail: mriya@ukr.net
+      </footer>
+   </main>
+   <!-- Підключення скриптів для сайт -->
+   <script src="public\slider.js"></script>
+   <script src="../public/script.js"></script>
+</body>
+
+</html>

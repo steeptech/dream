@@ -24,6 +24,18 @@ main {
   flex: 1 0 auto;
   width: 80%;
   margin: auto;
+
+  @media screen and (max-width: 328px) {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+}
+
+.ship-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* Стилі шапки сайту */
@@ -89,6 +101,14 @@ section {
   font-size: 20px;
   margin: 10px;
   overflow: hidden;
+  
+}
+
+.ship-container{
+  display: flex;
+  justify-content: center;
+
+
 }
 
 .ship {
@@ -97,13 +117,29 @@ section {
   margin: 5px;
 }
 
+.shipInfo{
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 700px) {
+    flex-direction:column;
+    }
+}
+
 .ships {
   text-align: center;
 }
 
 .ships img {
-  width: 400px;
-  height: 200px;
+  width: 600px;
+  height: 400px;
+
+
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    height: 100%;
+    }
 }
 
 .OurShips {
@@ -125,6 +161,14 @@ table.t2 {
   border-collapse: collapse;
   margin: 50px;
 
+  @media screen and (max-width: 700px) {
+    margin: 50px 0;
+    }
+
+    @media screen and (max-width: 450px) {
+      margin: 30px 0;
+      font-size: 13px;
+      }
 }
 
 .textShips {
@@ -137,6 +181,15 @@ table td {
 
 .td1 {
   border: 0pc;
+
+  
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    }
+  
 }
 
 .crewShip {
@@ -168,7 +221,12 @@ aside {
   width: 330px;
   font-size: 20px;
   line-height: 30px;
-}
+
+  @media screen and (max-width: 640px) {
+    width:100%;
+    margin: 30px 0;
+    }
+  }
 
 .crewNav {
   list-style-type: none;

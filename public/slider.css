@@ -19,15 +19,15 @@ img {
 
 /* Стилі для маленького слайдера на головній сторінці*/
 .main-menu .slideshow-container {
-      max-width: 400px;
-      max-height: 200px;
+      /* max-width: 400px;
+      max-height: 200px; */
       position: relative;
       margin: auto;
 }
 /* Стилі для великого слайдера на сторінці "Судна"*/
 .slideshow-container {
-      max-width: 800px;
-      max-height: 400px;
+      max-width: 1000px;
+      max-height: 500px;
       position: relative;
       margin: auto;
 }
